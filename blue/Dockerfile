@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
-RUN apt-get update && apt-get install -y python python-pip
-RUN pip install flask
+FROM ubuntu:20.04
+RUN apt-get update && apt-get install -y python3-pip
+RUN pip3 install Flask
 RUN useradd -ms /bin/bash subrahmanyam1216
 USER subrahmanyam1216
 COPY . /opt/
